@@ -1,0 +1,28 @@
+# git initialization
+git init
+# Adding the remote origin
+git remote add origin "https://github.com/rhhssmgit/python_codes.git"
+# pulling files from remote 
+git pull origin master
+# Adding the file to the index
+git add -A
+# To check the status of the file whether it is added to index or not
+git status 
+# commit the changes to the local repo
+git commit -a -m ""
+# to get the commit log of the files
+git log
+# to create branching
+git branch firstbranch
+# moving to the branch
+git checkout firstbranch
+# moving to the master
+git checkout master
+# merge the firstbranch to master by keeping the branch 
+git merge firstbranch
+# merge the firstbranch to master without keeping the branch (rebase)
+git rebase firstbranch
+# push the files to the remote repo
+git push origin firstbranch
+# revert to the old file after commiting
+git checkout <8digit from git log> <file_name>
